@@ -6,9 +6,16 @@ set softtabstop=4
 set encoding=utf-8
 set hlsearch
 set nobackup
+set completeopt=menuone,noinsert
 
 inoremap jj <Esc>
 noremap <C-y> y`m
+inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
+inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
+inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
+map <C-n> :NERDTreeToggle<CR>
+
+"autocmd VimEnter * execute 'NERDTree'
 
 "dein Scripts-----------------------------
 if &compatible
