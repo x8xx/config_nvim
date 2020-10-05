@@ -7,6 +7,7 @@ set encoding=utf-8
 set hlsearch
 set nobackup
 set completeopt=menuone,noinsert
+set background=light
 
 inoremap jj <Esc>
 noremap <C-y> y`m
