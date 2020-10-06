@@ -35,64 +35,21 @@ repo = 'neoclide/coc-git'
 
 [[plugins]]
 repo = 'Shougo/deol.nvim'
-hook_source = '''
-nnoremap <silent><C-o> :<C-u>Deol -split=floating<CR>
-tnoremap <ESC>   <C-\><C-n>
-'''
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-depends = 'context_filetype.vim'
-on_i = 1
-hook_source = '''
-    call deoplete#enable()
-    " No display of the number of competion list
-    set shortmess+=c
-
-    " <TAB>: completion.
-    inoremap <silent><expr> <TAB>
-          \ pumvisible() ? "\<C-n>" :
-          \ <SID>check_back_space() ? "\<TAB>" :
-          \ deoplete#manual_complete()
-    function! s:check_back_space() abort
-      let col = col('.') - 1
-      return !col || getline('.')[col - 1]  =~ '\s'
-    endfunction
-
-    " <S-TAB>: completion back.
-    inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<C-h>"
-    " <C-e>: popup cancel
-    inoremap <expr><C-e>       deoplete#cancel_popup()
-
-    call deoplete#custom#source('_', 'matchers', ['matcher_head'])
-    call deoplete#custom#source('_', 'converters', [
-          \ 'converter_remove_paren',
-          \ 'converter_remove_overlap',
-          \ 'matcher_length',
-          \ 'converter_truncate_abbr',
-          \ 'converter_truncate_menu',
-          \ 'converter_auto_delimiter',
-          \ ])
-    call deoplete#custom#option('keyword_patterns', {
-          \ '_': '[a-zA-Z_]\k*\(?',
-          \ 'tex': '[^\w|\s][a-zA-Z_]\w*',
-          \ })
-    call deoplete#custom#option('camel_case', v:true)
-'''
+repo = 'prabirshrestha/async.vim'
 
 [[plugins]]
-repo = 'zchee/deoplete-clang'
-hook_source = '''
-let g:deoplete#sources#clang#libclang_path = '/usr/lib64/llvm/libclang.so'
-let g:deoplete#sources#clang#clang_header = '/usr/include/clang'
-'''
-on_ft = ['c', 'cpp', 'cmake']
-depends = ['deoplete.nvim']
+repo = 'prabirshrestha/vim-lsp'
 
 [[plugins]]
-repo = 'Shougo/neoinclude.vim'
-on_ft = ['c', 'cpp']
-depends = ['deoplete.nvim']
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'

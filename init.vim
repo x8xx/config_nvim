@@ -14,9 +14,20 @@ noremap <C-y> y`m
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
 inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
-map <C-n> :NERDTreeToggle<CR>
+noremap <C-n> :NERDTreeToggle<CR>
 
-"autocmd VimEnter * execute 'NERDTree'
+let mapleader = "\<Space>"
+
+nnoremap <Leader>o :<C-u>Deol -split=floating<CR>
+tnoremap <ESC>   <C-\><C-n>
+
+nmap <silent> <Leader>d :LspDefinition<CR>
+nmap <silent> <Leader>p :LspHover<CR>
+nmap <silent> <Leader>r :LspReferences<CR>
+nmap <silent> <Leader>i :LspImplementation<CR>
+nmap <silent> <Leader>s :split \| :LspDefinition <CR>
+nmap <silent> <Leader>v :vsplit \| :LspDefinition <CR>
+
 
 "dein Scripts-----------------------------
 if &compatible
