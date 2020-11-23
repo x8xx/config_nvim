@@ -10,6 +10,8 @@ set completeopt=menuone,noinsert
 set background=light
 
 inoremap jj <Esc>
+noremap <Tab> gt
+nmap <S-Tab> gT
 noremap <C-y> y`m
 inoremap <expr><CR>  pumvisible() ? "<C-y>" : "<CR>"
 inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
