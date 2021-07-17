@@ -18,6 +18,11 @@ inoremap <expr><C-n> pumvisible() ? "<Down>" : "<C-n>"
 inoremap <expr><C-p> pumvisible() ? "<Up>" : "<C-p>"
 noremap <C-n> :NERDTreeToggle<CR>
 
+noremap H <C-w>h
+noremap J <C-w>j
+noremap K <C-w>k
+noremap L <C-w>l
+
 let mapleader = "\<Space>"
 
 nnoremap <Leader>o :<C-u>Deol -split=floating<CR>
@@ -29,6 +34,14 @@ nmap <silent> <Leader>r :LspReferences<CR>
 nmap <silent> <Leader>i :LspImplementation<CR>
 nmap <silent> <Leader>s :split \| :LspDefinition <CR>
 nmap <silent> <Leader>v :vsplit \| :LspDefinition <CR>
+
+"color
+highlight CursorColumn ctermfg=207
+
+"ctags
+set tags=./tags;$HOME
+nnoremap <C-]> g<C-]>
+inoremap <C-]> <ESC>g<C-]>
 
 
 "dein Scripts-----------------------------
