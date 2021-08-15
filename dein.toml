@@ -56,3 +56,6 @@ repo = 'mattn/vim-lsp-settings'
 
 [[plugins]]
 repo = 'iamcco/markdown-preview.nvim'
+
+[[plugins]]
+repo = 'simeji/winresizer'
