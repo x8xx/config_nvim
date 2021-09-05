@@ -59,3 +59,9 @@ repo = 'iamcco/markdown-preview.nvim'
 
 [[plugins]]
 repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'

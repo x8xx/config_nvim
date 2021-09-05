@@ -23,6 +23,8 @@ noremap J <C-w>j
 noremap K <C-w>k
 noremap L <C-w>l
 
+inoremap <C-f> <Right>
+
 let mapleader = "\<Space>"
 
 nnoremap <Leader>o :<C-u>Deol -split=floating<CR>
@@ -34,6 +36,10 @@ nmap <silent> <Leader>r :LspReferences<CR>
 nmap <silent> <Leader>i :LspImplementation<CR>
 nmap <silent> <Leader>s :split \| :LspDefinition <CR>
 nmap <silent> <Leader>v :vsplit \| :LspDefinition <CR>
+
+nmap <silent> <Leader>n :NERDTreeFocus<CR>
+let NERDTreeShowHidden=1
+let g:nerdtree_tabs_open_on_console_startup=1
 
 "color
 highlight CursorColumn ctermfg=207
