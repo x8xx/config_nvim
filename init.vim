@@ -23,6 +23,15 @@ noremap J <C-w>j
 noremap K <C-w>k
 noremap L <C-w>l
 
+noremap <C-h> ^
+noremap <C-l> $
+
+noremap zj 25j
+noremap zk 25k
+
+nnoremap x "_x
+nnoremap X "_X
+
 inoremap <C-f> <Right>
 
 let mapleader = "\<Space>"
