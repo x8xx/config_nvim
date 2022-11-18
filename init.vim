@@ -40,6 +40,7 @@ let mapleader = "\<Space>"
 nnoremap <Leader>o :<C-u>Deol -split=floating -winheight=60 -winwidth=160<CR>
 tnoremap <ESC>   <C-\><C-n>
 tnoremap <C-\>   <C-\><C-n>
+noremap <Leader>3 :noh<CR>
 
 nmap <silent> <Leader>d :LspDefinition<CR>
 nmap <silent> <Leader>p :LspHover<CR>
