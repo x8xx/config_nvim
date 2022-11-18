@@ -1,6 +1,6 @@
 [[plugins]]
 repo = 'jacoborus/tender.vim'
-hock_add = '''
+hook_add = '''
 syntax enable
 colorscheme tender
 if (has("termguicolors"))
@@ -65,3 +65,12 @@ repo = 'jistr/vim-nerdtree-tabs'
 
 [[plugins]]
 repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'szw/vim-maximizer'
+
+
+[[plugins]]
+repo = 'MunifTanjim/nui.nvim'
+[[plugins]]
+repo = 'shunsuke6/nvim-yoshi'
