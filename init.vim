@@ -8,6 +8,7 @@ set hlsearch
 set nobackup
 set completeopt=menuone,noinsert
 set background=light
+set mouse=
 
 inoremap jj <Esc>
 noremap <Tab> gt
