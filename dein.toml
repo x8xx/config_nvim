@@ -68,9 +68,3 @@ repo = 'tpope/vim-commentary'
 
 [[plugins]]
 repo = 'szw/vim-maximizer'
-
-
-[[plugins]]
-repo = 'MunifTanjim/nui.nvim'
-[[plugins]]
-repo = 'shunsuke6/nvim-yoshi'
