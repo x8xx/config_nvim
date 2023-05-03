@@ -29,6 +29,8 @@ noremap <C-l> $
 
 noremap zj 25j
 noremap zk 25k
+noremap zzj 12j
+noremap zzk 12k
 
 nnoremap x "_x
 nnoremap X "_X
