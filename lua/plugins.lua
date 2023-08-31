@@ -64,6 +64,8 @@ require("lazy").setup({
 
     -- window resize
     "simeji/winresizer",
+    -- commentout
+    "/tpope/vim-commentary",
     -- terminal
     "Shougo/deol.nvim",
     -- bracket completion
@@ -133,7 +135,10 @@ require("lazy").setup({
           "nvim-lua/plenary.nvim",
           "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
           "MunifTanjim/nui.nvim",
-        }
+        },
+        config = function()
+            require("plugin_setup/neo-tree")
+        end
     },
 
     -- lsp-client-config
@@ -165,7 +170,7 @@ require("lazy").setup({
                 vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, opts)
                 vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
                 vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-                vim.keymap.set('n', '<space>f', function()
+                vim.keymap.set('n', '<space>6', function()
                   vim.lsp.buf.format { async = true }
                 end, opts)
               end,

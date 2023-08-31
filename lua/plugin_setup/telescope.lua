@@ -4,7 +4,8 @@ require("telescope").setup({
     defaults = {
         mappings = {
             i = {
-                ["<TAB>"] = actions.select_tab
+                ["<TAB>"] = actions.select_tab,
+                ["<C-S>"] = actions.select_horizontal
             }
         }
     },
